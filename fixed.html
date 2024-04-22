@@ -39,7 +39,7 @@
     function onResize() {
         const isFB = /iPhone/i.test(navigator.userAgent) && /FBAV/i.test(navigator.userAgent);
         alert(isFB)
-        document.querySelector('html').style.height = (window.innerHeight / 2) + 'px'
+        document.querySelector('body').style.height = (window.innerHeight / 2) + 'px'
     };
     onResize();
 </script>
