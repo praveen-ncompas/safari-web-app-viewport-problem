@@ -40,6 +40,7 @@
     function onResize() {
         const isFB = /iPhone/i.test(navigator.userAgent) && /FBAV/i.test(navigator.userAgent);
         if (isFB) {
+            alert("Its is IPhone and FB")
             document.querySelector('body').style.height = window.innerHeight + 'px'
         }
     };
