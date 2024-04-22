@@ -40,8 +40,11 @@
     function onResize() {
         const isFB = /iPhone/i.test(navigator.userAgent) && /FBAV/i.test(navigator.userAgent);
         if (isFB) {
-            alert("Its is IPhone and FB")
-            document.querySelector('body').style.height = window.innerHeight + 'px'
+            alert("Its is IPhone and FB");
+            document.querySelector('body').style.height = window.innerHeight + 'px';
+            var style = document.createElement('style');
+            style.innerHTML = 'body { margin-bottom: 350px; }';
+            document.head.appendChild(style);
         }
     };
     onResize();
