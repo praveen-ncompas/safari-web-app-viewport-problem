@@ -35,9 +35,11 @@
     window.addEventListener('resize', function () {
         onResize();
     });
+
     function onResize() {
-        alert(window.innerHeight)
-        document.querySelector('html').style.height = window.innerHeight + 'px'
+        const isFB = /iPhone/i.test(navigator.userAgent) && /FBAV/i.test(navigator.userAgent);
+        alert(isFB)
+        document.querySelector('html').style.marginBottom = window.innerHeight + 'px'
     };
     onResize();
 </script>
