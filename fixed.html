@@ -31,4 +31,14 @@
     </div>
 </body>
 
+<script>
+    window.addEventListener('resize', function () {
+        onResize();
+    });
+    function onResize() {
+        document.querySelector('html').style.height = window.innerHeight + 'px'
+    };
+    onResize();
+</script>
+
 </html>
